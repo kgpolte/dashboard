@@ -91,11 +91,17 @@ body {
   width: clamp(200px, 100%, 500px);
   border-style: none;
   background: var(--gray);
-  padding: 0.5em;
+  padding: 0.5em 1em;
   border-radius: 1em;
 }
+#search:focus {
+  outline: none;
+  border: 2px solid var(--blue);
+  padding: calc(0.5em - 2px) calc(1em - 2px);
+  box-shadow: 2px 2px 4px #aaa;
+}
 #search-button > .link-icon:hover {
-  filter: drop-shadow(2px 2px 2px gray);
+  filter: drop-shadow(2px 2px 4px #aaa);
 }
 #user-info > h2 {
   margin: 0;
