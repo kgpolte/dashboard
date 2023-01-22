@@ -134,7 +134,6 @@ body {
 #trending {
   display: grid;
   grid-template-rows: 3rem 1fr;
-  align-items: stretch;
   gap: 1rem;
 }
 
@@ -149,7 +148,7 @@ body {
   list-style: none;
   
   margin: 0;
-  padding: 2rem 1rem;
+  padding: 1rem 1rem;
 
   display: grid;
 }
