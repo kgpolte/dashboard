@@ -182,6 +182,10 @@ body {
   padding: 1.5em;
   border-radius: 8px;
   border-left: 4px solid var(--gold);
+
+  display: grid;
+  grid-template-rows: min-content 1fr max-content;
+  gap: 0.5em;
 }
 #projects > .card > h3,
 #projects > .card > p {
@@ -192,6 +196,16 @@ body {
 }
 #projects > .card > p {
   color: gray;
+}
+#projects > .card > .actions {
+  height: 1em;
+  display: grid;
+  grid-template-columns: max-content max-content max-content;
+  justify-content: end;
+  gap: 2em;
+}
+#projects > .card > .actions > a > svg {
+  height: 100%;
 }
 
 #right-bar {
