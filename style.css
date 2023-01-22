@@ -66,6 +66,10 @@ body {
   width: 100%;
 }
 
+#user-info > h2 {
+  margin: 0;
+}
+
 #account-menu {
   display: flex;
   justify-content: flex-end;
@@ -106,13 +110,15 @@ body {
 
 #right-bar {
   display: grid;
+  grid-template-rows: 1fr max-content;
   gap: 1rem;
 }
 
 #announcements,
 #trending {
   display: grid;
-  grid-template-rows: 3rem;
+  grid-template-rows: 3rem 1fr;
+  align-items: stretch;
   gap: 1rem;
 }
 
@@ -128,9 +134,20 @@ body {
   font-size: 0.8rem;
   margin: 0;
   padding: 1rem;
+
+  display: grid;
+}
+
+#announcements > .card > li:nth-child(1),
+#announcements > .card > li:nth-child(2) {
+  border-bottom: 1px solid var(--gray);
 }
 
 ul.card {
   background: #fff;
   border-radius: 8px;
+}
+
+span.project-title {
+  color: gray;
 }
