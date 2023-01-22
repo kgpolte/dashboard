@@ -3,6 +3,7 @@
 }
 :root {
   --blue: #1992d4;
+  --light-blue: #4fbaf3;
   --gray: #e2e8f0;
   --gold: #f0b429;
 }
@@ -85,6 +86,23 @@ body {
   display: flex;
   justify-content: flex-end;
 }
+#action-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5em;
+}
+#action-buttons > button {
+  background: var(--blue);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  border-style: none;
+  border-radius: 2em;
+  padding: 0.8em 1.6em;
+}
+#action-buttons > button:hover {
+  background: var(--light-blue);
+}
 
 #main {
   grid-column: 2 / 3;
@@ -146,10 +164,8 @@ body {
 #announcements > .card,
 #trending > .card {
   list-style: none;
-  
   margin: 0;
-  padding: 1rem 1rem;
-
+  padding: 1rem;
   display: grid;
 }
 #announcements > .card > li {
@@ -163,7 +179,7 @@ body {
   border-bottom: 1px solid var(--gray);
 }
 #trending > .card {
-  display: grid;
+  padding: 2rem;
   gap: 0.5rem;
 }
 ul.card {
