@@ -76,8 +76,26 @@ body {
 
   padding: 1rem 2rem;
 }
+#search-bar {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  align-items: center;
+  gap: 0.5em;
+}
+#search-button {
+  border: none;
+  background: none;
+  padding: 0;
+}
 #search {
   width: clamp(200px, 100%, 500px);
+  border-style: none;
+  background: var(--gray);
+  padding: 0.5em;
+  border-radius: 1em;
+}
+#search-button > .link-icon:hover {
+  filter: drop-shadow(2px 2px 2px gray);
 }
 #user-info > h2 {
   margin: 0;
