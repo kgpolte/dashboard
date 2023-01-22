@@ -71,7 +71,7 @@ body {
 
   display: grid;
   grid-template-columns: 1fr max-content;
-  gap: 1rem;
+  gap: 2rem;
   align-items: center;
 
   padding: 1rem 2rem;
@@ -88,7 +88,7 @@ body {
   padding: 0;
 }
 #search {
-  width: clamp(200px, 100%, 500px);
+  width: clamp(200px, 100%, 600px);
   border-style: none;
   background: var(--gray);
   padding: 0.5em 1em;
@@ -103,8 +103,21 @@ body {
 #search-button > .link-icon:hover {
   filter: drop-shadow(2px 2px 4px #aaa);
 }
+#user-info {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 1em;
+  align-items: center;
+  font-weight: bold;
+}
+#user-info > .avatar {
+  width: 100px;
+}
 #user-info > h2 {
   margin: 0;
+}
+.user-name {
+  font-size: 1.5rem;
 }
 #account-menu {
   display: flex;
@@ -212,4 +225,7 @@ ul.card {
 }
 span.project-title {
   color: gray;
+}
+.avatar {
+  border-radius: 50%;
 }
