@@ -1,3 +1,6 @@
+* {
+  margin: 0;
+}
 :root {
   --blue: #1992d4;
   --gray: #e2e8f0;
@@ -89,7 +92,7 @@ body {
 
 #projects {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-template-rows: 3rem;
   align-content: start;
   gap: 1rem;
@@ -103,9 +106,22 @@ body {
 
 #projects > .card {
   background: #fff;
-  padding: 1rem;
+  padding: 1.5em;
   border-radius: 8px;
   border-left: 4px solid var(--gold);
+}
+
+#projects > .card > h3,
+#projects > .card > p {
+  margin: 0;
+}
+
+#projects > .card > h3 {
+  font-size: 1.1rem;
+}
+
+#projects > .card > p {
+  color: gray;
 }
 
 #right-bar {
@@ -131,11 +147,18 @@ body {
 #announcements > .card,
 #trending > .card {
   list-style: none;
-  font-size: 0.8rem;
+  
   margin: 0;
-  padding: 1rem;
+  padding: 2rem 1rem;
 
   display: grid;
+}
+
+#announcements > .card > li {
+  font-size: 0.8rem;
+  padding: 1rem;
+  display: grid;
+  align-content: center;
 }
 
 #announcements > .card > li:nth-child(1),
