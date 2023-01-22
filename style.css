@@ -68,13 +68,14 @@ body {
 
 #header {
   grid-column: 2 / 3;
-
   display: grid;
   grid-template-columns: 1fr max-content;
   gap: 1rem;
   align-items: center;
 
   padding: 1rem 2rem;
+  box-shadow: 3px 3px 8px #bbb;
+  z-index: 2;
 }
 #search-bar {
   display: grid;
@@ -256,9 +257,10 @@ body {
   aspect-ratio: 1 / 1;
   object-fit: cover;
 }
-ul.card {
+.card {
   background: #fff;
   border-radius: 8px;
+  box-shadow: 3px 3px 8px #bbb;
 }
 span.project-title {
   color: gray;
