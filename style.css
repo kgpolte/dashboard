@@ -71,7 +71,7 @@ body {
 
   display: grid;
   grid-template-columns: 1fr max-content;
-  gap: 2rem;
+  gap: 1rem;
   align-items: center;
 
   padding: 1rem 2rem;
@@ -111,7 +111,7 @@ body {
   font-weight: bold;
 }
 #user-info > .avatar {
-  width: 100px;
+  width: 80px;
 }
 #user-info > h2 {
   margin: 0;
@@ -119,9 +119,21 @@ body {
 .user-name {
   font-size: 1.5rem;
 }
-#account-menu {
+#header-menu {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
+  gap: 2em;
+}
+#header-menu > a {
+  color: #000;
+  text-decoration: none;
+}
+#header-menu > a > h2 {
+  font-size: 1rem;
+}
+#header-menu > a > .avatar {
+  width: 50px;
 }
 #action-buttons {
   display: grid;
